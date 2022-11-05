@@ -97,6 +97,7 @@ dependencies:
   - libev=4.33=h7f8727e_1
   - libevent=2.1.12=h8f2d780_0
   - libffi=3.3=he6710b0_2
+  - libgcc=7.2.0=h69d50b8_2
   - libgcc-ng=11.2.0=h1234567_1
   - libgfortran-ng=11.2.0=h00389a5_1
   - libgfortran5=11.2.0=h1234567_1

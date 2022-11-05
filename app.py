@@ -7,6 +7,8 @@ import streamlit as st
 pickle_in = open("model.pkl", "rb")
 model = pickle.load(pickle_in)
 
+
+
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 
@@ -38,7 +40,7 @@ def main():
     fuel_date = fuel_date.strftime('%Y%d%m%H%M%S')
     if st.button("Predict"):
         result = prediction(fuel_date,odometer,trip_distance, qunatity, city, motor_way, country_roads, ac, park_heating, ecr_deviation, avg_speed, tire_type, driving_style_moderate, driving_style_normal)
-        st.success("The consumption is {} km/h".format(result))
+        st.success("The consumption is {} kw/h".format(result))
 
 if __name__ == "__main__":
     main()
